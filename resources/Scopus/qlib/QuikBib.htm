@@ -1,0 +1,42 @@
+<html><head>
+<meta name="GENERATOR" content="Microsoft Developer Studio">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuikBib</title>
+<script language="javascript">
+<!--
+
+function udTop (sURL) {
+  if (sURL.indexOf ('?') > -1) 
+    sURL = sURL.split ('?')[1];
+  var mDLoad = window.open ("top.asp?"+sURL,"QBTOP");
+  
+   return false;
+}
+
+var sQueryString = 'vendor=SCOPUS&filter=Refworks+Tagged+Format&url=http%3a%2f%2fwww.scopus.com%2frefworks%2fcallback.uri%3fexportType%3dQUIKBIB%26stateKey%3dREF_1046511890%26origin%3dresultslist&format=0&style=NLM+-+National+Library+of+Medicine&authID=tV9yVm%2fEgettGmvRj%2bnsVO5cuy8%3d';
+
+function startProcess () {
+
+  window.open ("processRequesst.asp?"+sQueryString,"GBFormArea");
+
+}
+
+//-->
+</script></head>
+
+
+
+
+
+
+
+<frameset id="WORKFRM" rows="36,*" border="0" onload="startProcess();udTop(document.URL)" framespacing="0" frameborder="no"> 
+  <frame frameborder="no" marginheight="0" marginwidth="0" src="top.asp" name="QBTOP" scrolling="no" noresize="noresize">
+  <frame frameborder="no" marginheight="0" marginwidth="0" src="" name="GBFormArea" scrolling="auto" noresize="noresize">    
+</frameset>
+
+
+
+
+
+</html>

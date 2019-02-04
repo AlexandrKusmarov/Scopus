@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ParserScope:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ParserScope_jar</output-path>
+    <root id="archive" name="ParserScope.jar">
+      <element id="module-output" name="ParserScope" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/poi/poi/3.11/poi-3.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.9/commons-codec-1.9.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

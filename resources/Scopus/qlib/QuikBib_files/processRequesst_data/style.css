@@ -1,0 +1,189 @@
+.BTNSB
+{
+    BORDER-RIGHT: #da0101 1px solid;
+    BORDER-TOP: #da0101 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    BACKGROUND: #eeeeee;
+    BORDER-LEFT: #da0101 1px solid;
+    CURSOR: pointer;
+    BORDER-BOTTOM: #da0101 1px solid;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.BTNS
+{
+    font-family:verdana,arial,helvetica; 
+    font-size:12px;
+    background: #EEEEEE;
+    cursor: pointer;
+    border-bottom: 1px solid #da0101; 
+    border-right: 1px solid #da0101;
+    border-left: 1px solid #da0101; 
+    border-top: 1px solid #da0101
+}
+.BTNSS
+{
+    BORDER-RIGHT: #da0101 1px solid;
+    BORDER-TOP: #da0101 1px solid;
+    FONT-SIZE: 11px;
+    BACKGROUND: #eeeeee;
+    BORDER-LEFT: #da0101 1px solid;
+    CURSOR: pointer;
+    BORDER-BOTTOM: #da0101 1px solid;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.BTNSG
+{
+    font-family:verdana,arial,helvetica; 
+    font-size:12px;
+}
+.BTNSSized
+{
+    font-family:verdana,arial,helvetica; 
+    font-size:12px;
+    background: #EEEEEE; 
+    cursor: pointer;
+    width:25px;
+    height:25px;
+    border-bottom: 1px solid #da0101; 
+    border-right: 1px solid #da0101;
+    border-left: 1px solid #da0101; 
+    border-top: 1px solid #da0101;
+}
+.HF
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 18px;
+    FONT-FAMILY: Verdana, Arial, Helvetica
+}
+.BBF
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    FONT-FAMILY: Verdana, Arial, Helvetica
+}
+.BF
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.BTF
+{
+    FONT-SIZE: 13px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.TF
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.TFR
+{
+    FONT-SIZE: 12px;
+    COLOR: red;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.TFG
+{
+    FONT-SIZE: 12px;
+    COLOR: gray;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.TFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SF
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SFG
+{
+    FONT-SIZE: 11px;
+    COLOR: gray;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SFR
+{
+    FONT-SIZE: 11px;
+    COLOR: red;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SSF
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.SSFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.IF
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.IFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: verdana,arial,helvetica
+}
+.MF
+{
+    FONT-SIZE: 13px;
+    FONT-FAMILY: courier new
+}
+.MFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    FONT-FAMILY: courier
+}
+.DF
+{
+    FONT-SIZE: 16px;
+    FONT-FAMILY: timesroman
+}
+.DFB
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    FONT-FAMILY: timesroman
+}
+.HLITE
+{
+    background-color: #FFFF99
+}
+.ThumbNailTDStyle  /* used to dispaly thumb nails in a TD cell */
+{  
+ border:thin solid #CCCCCC;
+ width:100px;
+ height:100px;
+ vertical-align: middle;
+ text-align : center;
+
+}
+.ThumbNailDescTDStyle  /* used to dispaly thumb nails description in a TD cell */
+{  
+ width:100px;
+ vertical-align: top;
+ text-align : center;
+
+}
+.ThumbNailSpaceTDStyle  /* used to dispaly thumb nails Space in a TD cell */
+{  
+ width:10px;
+}
