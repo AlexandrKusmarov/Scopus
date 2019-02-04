@@ -6,7 +6,10 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * This programm works only with the site Scopus.com.
@@ -27,6 +30,8 @@ public class ParserScopus {
         Elements hIndexAndDocs = doc.getElementsByClass("FontLarge");
         Elements rows = elements.select("tr[class=searchArea]");
         Elements elemDocBibl = docBibl.select("p");
+        Elements span = doc.select(".secondaryLink .anchorText");
+        Elements authID = doc.select(".authId");
 
         xmlPath = url.replace(".htm", ".xls");
 
@@ -41,8 +46,12 @@ public class ParserScopus {
         hind.setCellValue("H-index");
         HSSFCell authdocs = row1.createCell(2);
         authdocs.setCellValue("Authors docs");
-        HSSFCell ttlnumb = row1.createCell(3);
+        HSSFCell ttlnumb = row1.createCell(4);
         ttlnumb.setCellValue("Total number of citation");
+        HSSFCell id = row1.createCell(3);
+        id.setCellValue("Author ID");
+        HSSFCell orcid = row1.createCell(5);
+        orcid.setCellValue("ORCID");
 
         HSSFRow row = sheet.createRow(1);
         HSSFCell name = row.createCell(0);
@@ -51,8 +60,18 @@ public class ParserScopus {
         hInd.setCellValue(hIndexAndDocs.first().text());
         HSSFCell authDoc = row.createCell(2);
         authDoc.setCellValue(hIndexAndDocs.get(1).text());
-        HSSFCell totcit = row.createCell(3);
+        HSSFCell totcit = row.createCell(4);
         totcit.setCellValue(hIndexAndDocs.get(2).text());
+        HSSFCell idValue = row.createCell(3);
+        Pattern p = Pattern.compile("[\\d]*[\\d]");
+        Matcher m = p.matcher(authID.text());
+        while (m.find()) {
+            idValue.setCellValue(m.group());
+        }
+        HSSFCell arcidValue = row.createCell(5);
+        if (span.get(7).text().contains("http://orcid.org/")) {
+            arcidValue.setCellValue(span.get(7).text().substring(17));
+        }
 
         HSSFRow row3 = sheet.createRow(3);
         HSSFCell docname = row3.createCell(0);
